@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+
+    <!-- Dark Mode Toggle -->
+    <div class="fixed top-4 right-4">
+        <label for="dark-mode-toggle" class="flex items-center cursor-pointer">
+            <div class="relative">
+                <input id="dark-mode-toggle" type="checkbox" class="sr-only" />
+                <div class="block bg-gray-600 w-14 h-8 rounded-full"></div>
+                <div class="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
+            </div>
+            <div class="ml-3 text-gray-100">Dark Mode</div>
+        </label>
+    </div>
+    <!-- Hero Section -->
+    <section class="hero bg-blue-500 text-white text-center py-16">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-bold">Catchy Headline Here</h1>
+            <p class="mt-4 text-lg">A short description that captures the essence of your app.</p>
+            <div class="mt-8">
+                <button class="btn-primary">Get Started</button>
+                <button class="btn-secondary">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <hr/>
+    <!-- Features Section -->
+    <section id="features" class="features py-16">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-8">Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature Item -->
+                <div class="feature-item text-center p-4 bg-gray-100 dark:bg-gray-800 rounded shadow-lg">
+                    <i class="fas fa-cog text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Good Service</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore excepturi maxime, nemo rem incidunt facere totam fugiat molestiae voluptatum.</p>
+                </div>
+                <div class="feature-item text-center p-4 bg-gray-100 dark:bg-gray-800 rounded shadow-lg">
+                    <i class="fas fa-cog text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Future Plan</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste inventore corrupti provident expedita iusto temporibus.</p>
+                </div>
+                <div class="feature-item text-center p-4 bg-gray-100 dark:bg-gray-800 rounded shadow-lg">
+                    <i class="fas fa-cog text-4xl mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Easy Uses</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, sapiente.</p>
+                </div>
+                <!-- Add more feature items as needed -->
+            </div>
+        </div>
+    </section>
+<hr/>
+    <!-- Screenshots/Gallery Section -->
+    <section class="screenshots py-16 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">App Screenshots</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Screenshot Item -->
+                <div class="screenshot-item">
+                    <a href="Foreground.png" data-lightbox="gallery" data-title="Screenshot 1">
+                        <img src="Foreground.png" alt="Screenshot 1" class="rounded shadow-lg">
+                    </a>
+                </div>
+                <div class="screenshot-item">
+                    <a href="Foreground.png" data-lightbox="gallery" data-title="Screenshot 1">
+                        <img src="Foreground.png" alt="Screenshot 1" class="rounded shadow-lg">
+                    </a>
+                </div>
+                <div class="screenshot-item">
+                    <a href="Foreground.png" data-lightbox="gallery" data-title="Screenshot 1">
+                        <img src="Foreground.png" alt="Screenshot 1" class="rounded shadow-lg">
+                    </a>
+                </div>
+                <!-- Add more screenshot items as needed -->
+            </div>
+        </div>
+    </section>
+    <hr/>
+    <!-- Testimonials Section -->
+    <section class="testimonials py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">What Our Users Say</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial Item -->
+                <div class="testimonial-item p-4 bg-gray-100 dark:bg-gray-800 rounded shadow-lg">
+                    <p>"This app is amazing!"</p>
+                    <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">- Niharika Sahu</p>
+                </div>
+                <div class="testimonial-item p-4 bg-gray-100 dark:bg-gray-800 rounded shadow-lg">
+                    <p>"This app is amazing Must Visit!"</p>
+                    <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">- Nishant Sahu</p>
+                </div>
+                <div class="testimonial-item p-4 bg-gray-100 dark:bg-gray-800 rounded shadow-lg">
+                    <p>"This app is awesome "</p>
+                    <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">- Aman Patel</p>
+                </div>
+                <!-- Add more testimonial items as needed -->
+            </div>
+        </div>
+    </section>
+    <hr/>
+    <!-- Pricing Plans Section -->
+    <section class="pricing py-16 bg-gray-100 dark:bg-gray-800">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Pricing Plans</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pricing Plan Item -->
+                <div class="pricing-plan p-4 bg-white dark:bg-gray-700 rounded shadow-lg">
+                    <h3 class="text-xl font-semibold">Basic Plan</h3>
+                    <p class="text-4xl font-bold my-4">$9.99/mo</p>
+                    <button class="btn-primary">Choose Plan</button>
+                </div>
+                <!-- Add more pricing plan items as needed -->
+                <div class="pricing-plan p-4 bg-white dark:bg-gray-700 rounded shadow-lg">
+                    <h3 class="text-xl font-semibold">Basic Plan</h3>
+                    <p class="text-4xl font-bold my-4">$77.99/mo</p>
+                    <button class="btn-primary">Choose Plan</button>
+                </div>
+                <div class="pricing-plan p-4 bg-white dark:bg-gray-700 rounded shadow-lg">
+                    <h3 class="text-xl font-semibold">Basic Plan</h3>
+                    <p class="text-4xl font-bold my-4">$13.99/mo</p>
+                    <button class="btn-primary">Choose Plan</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr/>
+     <!-- Contact/Download Section -->
+     <section class="contact-download py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Get In Touch or Download</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div>
+                    <form class="max-w-lg mx-auto">
+                        <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border rounded bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100">
+                        <input type="email" placeholder="Your Email" class="w-full p-3 mb-4 border rounded bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100">
+                        <textarea placeholder="Your Message" class="w-full p-3 mb-4 border rounded bg-white dark:bg-gray-700 dark:border-gray-600 dark:text-gray-100"></textarea>
+                        <button type="submit" class="btn-primary">Submit</button>
+                    </form>
+                </div>
+                <!-- Download Links -->
+                <div class="flex flex-col justify-center items-center">
+                    <h3 class="text-xl font-semibold mb-4">Download the App</h3>
+                    <a href="#" class="btn-primary mb-2">Download for iOS</a>
+                    <a href="#" class="btn-secondary">Download for Android</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
